@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Youssef Mohamed ²</title>
+
+    <link rel="icon" href="img/logo_icon.png">
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+
+    <header>
+        <div class="menu-overlay" id="menu-overlay" onclick="Open_colose_Menu()"></div>
+        <nav class="container">
+            <a href="#home" class="logo"><img src="img/logo.png" alt=""></a>
+
+
+
+            <div class="links" id="links">
+                <span class="close_menu" onclick="Open_colose_Menu()"><i class="fa-solid fa-xmark"></i></span>
+
+
+                <a href="#home" class="logo"><img src="img/logo.png" alt=""></a>
+                <a class="active" href="#home" onclick="Open_colose_Menu()">Home</a>
+                <a href="#about" onclick="Open_colose_Menu()">About</a>
+                <a href="#services" onclick="Open_colose_Menu()">Services</a>
+                <a href="#projects" onclick="Open_colose_Menu()">Projects</a>
+                <a href="#contact" onclick="Open_colose_Menu()">Contact</a>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.facebook.com/share/1Dckg5acWv/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/youssef-mohamed-abdelrasoul"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/youssef_mohamed_moham3d?stkn=dWt4N2xrYnRubHE5"><i class="fa-brands fa-instagram"></i></a>
+                <span class="icon_mrnu" onclick="Open_colose_Menu()"><i class="fa-solid fa-bars"></i></span>
+
+            </div>
+        </nav>
+    </header>
+    <div class="hero" id="home">
+        <div class="container">
+            <div class="div_Text">
+                <h4>Hello, I'm</h4>
+                <h1><span>Youssef Mohamed</span></h1>
+                <h2>Data Analyst</h2>
+                <p>
+                    I transform raw data into clear insights and interactive
+                    dashboards, helping turn numbers into stories and
+                    insights into better business decisions.
+                </p>
+                <div class="btns">
+                    <a href="#contact" class="btn">hire me</a>
+                    <a href="img/Youssef Mohamed.pdf" class="btn_no_bg" download="">Download Resume</a>
+                </div>
+            </div>
+            <div class="div_img">
+                <img class="person" src="img/home.png" alt="">
+                <img class="bg_img" src="img/bg_img_home.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="div_text">
+                <h5>about me</h5>
+                <h2><span>I'm a Data Analyst</span></h2>
+                <h4>I Turn Data into Meaningful Insights</h4>
+                <p> Hi, I’m Youssef Mohamed, a Data Analyst passionate about turning data into clear insights and
+                    smarter business decisions.
+
+                    My journey into Data Analytics started with a curiosity about how data can reveal patterns, tell
+                    meaningful stories, and help solve real-world problems. Through learning and hands-on projects, I’ve
+                    developed practical skills in Excel, SQL, and Power BI, with a focus on data cleaning, analysis,
+                    visualization, and dashboard development
+                    I enjoy transforming complex datasets into simple, interactive dashboards that make information
+                    easier to understand and support better decision-making. I’m curious, detail-oriented, and always
+                    eager to learn, solve problems, and improve my analytical skills through practical projects.
+                    My goal is to turn data into meaningful insights that create real value.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Data Analysis</li>
+                    <li><i class="fa-solid fa-check"></i> Data Visualization</li>
+                    <li><i class="fa-solid fa-check"></i> Excel & Power BI</li>
+                    <li><i class="fa-solid fa-check"></i> SQL & Data Cleaning</li>
+                </ul>
+                <a href="img/Youssef Mohamed.pdf" download class="btn">Download CV</a>
+            </div>
+
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="top_section" style="text-align: center; margin-bottom: 50px;">
+                <h2>My <span>Services</span></h2>
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Data Analysis</h3>
+                    <p>
+                        Analyzing data to identify patterns, trends, and insights
+                        that help transform raw data into meaningful information.
+                    </p>
+                    <a href="javascript:void(0)" class="btn" onclick="openServiceModal('modal-data-analysis')">Read
+                        More</a>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h3>Data Visualization</h3>
+                    <p>
+                        Creating clear and interactive dashboards that make data
+                        easier to understand and help communicate important insights.
+                    </p>
+                    <a href="javascript:void(0)" class="btn" onclick="openServiceModal('modal-data-visualization')">Read
+                        More</a>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <h3>Dashboard Development</h3>
+                    <p>
+                        Building interactive dashboards and reports using Excel and Power BI to present data clearly.
+                    </p>
+                    <a href="javascript:void(0)" class="btn"
+                        onclick="openServiceModal('modal-dashboard-development')">Read More</a>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Data Storytelling & Insights</h3>
+                    <p>
+                        Turning analysis results into clear, actionable recommendations that support confident business
+                        decisions.
+                    </p>
+                    <a href="javascript:void(0)" class="btn" onclick="openServiceModal('modal-data-storytelling')">Read
+                        More</a>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>Data Modeling (Power BI)</h3>
+                    <p>
+                        Structuring raw data into connected, reliable models with relationships between tables for
+                        accurate reporting.
+                    </p>
+                    <a href="javascript:void(0)" class="btn" onclick="openServiceModal('modal-data-modeling')">Read
+                        More</a>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-square-root-variable"></i>
+                    <h3>DAX Measures & Calculations</h3>
+                    <p>
+                        Writing custom DAX formulas to build KPIs, ratios, and time-based calculations inside Power BI
+                        dashboards.
+                    </p>
+                    <a href="javascript:void(0)" class="btn" onclick="openServiceModal('modal-dax-measures')">Read
+                        More</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Service Modals -->
+    <div class="service-modal-overlay" id="modal-data-analysis">
+        <div class="service-modal">
+            <span class="service-modal-close" onclick="closeServiceModal('modal-data-analysis')">&times;</span>
+            <h3>Data Analysis</h3>
+            <p>I work with raw datasets to identify patterns, trends, and relationships that aren't visible at first
+                glance. Using Excel, SQL, and Power BI, I clean and structure data, then run analysis to answer specific
+                business questions. The goal is always the same: turn scattered numbers into a clear answer.</p>
+        </div>
+    </div>
+    <div class="service-modal-overlay" id="modal-data-visualization">
+        <div class="service-modal">
+            <span class="service-modal-close" onclick="closeServiceModal('modal-data-visualization')">&times;</span>
+            <h3>Data Visualization</h3>
+            <p>Numbers alone rarely convince anyone. I design charts and visual layouts that make trends and comparisons
+                immediately obvious, choosing the right chart type for the right question. Every visualization is built
+                to answer a question in seconds.</p>
+        </div>
+    </div>
+    <div class="service-modal-overlay" id="modal-dashboard-development">
+        <div class="service-modal">
+            <span class="service-modal-close" onclick="closeServiceModal('modal-dashboard-development')">&times;</span>
+            <h3>Dashboard Development</h3>
+            <p>I build interactive dashboards that bring multiple KPIs, filters, and views together in one place, so
+                decision-makers can explore the data themselves instead of waiting for a new report every time something
+                changes.</p>
+        </div>
+    </div>
+    <div class="service-modal-overlay" id="modal-data-storytelling">
+        <div class="service-modal">
+            <span class="service-modal-close" onclick="closeServiceModal('modal-data-storytelling')">&times;</span>
+            <h3>Data Storytelling & Insights</h3>
+            <p>Analysis only matters if it leads to a decision. I take the results of an analysis and translate them
+                into a clear, actionable recommendation, focused on what should happen next.</p>
+        </div>
+    </div>
+    <div class="service-modal-overlay" id="modal-data-modeling">
+        <div class="service-modal">
+            <span class="service-modal-close" onclick="closeServiceModal('modal-data-modeling')">&times;</span>
+            <h3>Data Modeling (Power BI)</h3>
+            <p>I structure raw tables into a clean, connected data model, building relationships between tables so a
+                dashboard can pull accurate answers from multiple sources at once instead of one flat sheet.</p>
+        </div>
+    </div>
+    <div class="service-modal-overlay" id="modal-dax-measures">
+        <div class="service-modal">
+            <span class="service-modal-close" onclick="closeServiceModal('modal-dax-measures')">&times;</span>
+            <h3>DAX Measures & Calculations</h3>
+            <p>I write custom DAX formulas to calculate KPIs, ratios, and time-based comparisons like month-over-month
+                growth directly inside Power BI, so every number on the dashboard updates automatically as new data
+                comes in.</p>
+        </div>
+    </div>
+    <section class="projects" id="projects">
+        <section class="projects">
+            <div class="container">
+                <div class="top_section">
+                    <h2>Explore my Popular <span>Projects</span></h2>
+
+
+                </div>
+                <div class="project_box">
+                    <div class="video-wrapper">
+                        <video src="img/project1.mp4" preload="metadata" playsinline></video>
+                        <button class="play-btn" aria-label="Play video" onclick="toggleProjectVideo(this)"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <div class="text">
+                        <h4><span>Coffee Sales Dashboard</span></h4>
+                        <h3><a href="https://lnkd.in/p/eqcuR_Cn">Coffee Sales Performance </a></h3>
+
+                        <p>An interactive Coffee Sales Dashboard designed to transform raw sales data into clear and meaningful business insights.
+                            The dashboard provides an overview of key performance indicators, including Total Sales, Total Transactions, and Average Price.
+                            It analyzes sales trends by month to identify changes in business performance throughout the year. 
+                            The dashboard also provides insights into sales by product and time of day, helping identify high-performing products and customer purchasing patterns. 
+                            Interactive visualizations make it easier to explore the data and understand different aspects of sales performance. 
+                            This dashboard was developed using Power BI with data analysis, data visualization, and analytical techniques to support better business understanding and data-driven decision-making.
+                        </p>
+                        <a href="https://lnkd.in/p/eqcuR_Cn" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                </div>
+                <div class="project_box project_box_2">
+                    <div class="video-wrapper">
+                        <video src="img/project2.mp4" preload="metadata" playsinline></video>
+                        <button class="play-btn" aria-label="Play video" onclick="toggleProjectVideo(this)"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <div class="text">
+                        <h4><span>Personal Finance Dashboard</span></h4>
+
+                        <h3><a href="https://lnkd.in/p/e6iEwS8w">Personal Finance & Financial Performance Analysis</a></h3>
+                        <p>An interactive Personal Finance Dashboard designed to provide a clear overview of income, expenses, savings, and financial performance over time. 
+                            The dashboard presents key financial indicators such as Total Income, Total Expenses, Total Savings, Savings Rate, and Monthly Growth. 
+                            It analyzes financial trends by date and provides a detailed breakdown of expenses and savings across different categories. 
+                            Interactive filters allow users to explore financial performance across different years and periods. 
+                            The dashboard combines KPI cards, trend analysis, donut charts, and detailed financial tables to make financial data easier to understand and monitor. 
+                            Developed using Power BI with data transformation, analysis, visualization, and interactive dashboard techniques.
+                        </p>
+                        <a href="https://lnkd.in/p/e6iEwS8w" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                </div>
+                <div class="project_box">
+                    <div class="video-wrapper">
+                        <video src="img/project3.mp4" preload="metadata" playsinline></video>
+                        <button class="play-btn" aria-label="Play video" onclick="toggleProjectVideo(this)"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <div class="text">
+                        <h4><span>Sales Performance Analytics</span></h4>
+
+                        <h3><a href="https://lnkd.in/p/eDXHiEpE">Business Performance & Revenue Insights</a></h3>
+                        <p>An interactive Sales Performance Analytics dashboard designed to provide a clear overview of business performance.
+                            It presents key KPIs including Total Revenue, Total Units, Total Customers, Total Products, and Total Orders.
+                            The dashboard analyzes monthly revenue trends, sales by category, products, and cities.
+                            Interactive filters allow users to explore performance by city, month, and category.
+                            Built with Power BI using data analysis, KPI development, interactive filtering, and data visualization techniques.
+                        </p>
+                        <a href="https://lnkd.in/p/eDXHiEpE" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                </div>
+                <div class="project_box project_box_2">
+                    <div class="video-wrapper">
+                        <video src="img/project4.mp4" preload="metadata" playsinline></video>
+                        <button class="play-btn" aria-label="Play video" onclick="toggleProjectVideo(this)"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <div class="text">
+                        <h4><span>Amazon Dashboard</span></h4>
+                        <h3><a href="https://lnkd.in/p/ebsbQBPM">Product Performance & Customer Satisfaction Insights</a></h3>
+                        <p>
+                            An interactive Amazon Product Analytics dashboard designed to provide a comprehensive view of product performance, pricing, discounts, and customer satisfaction.
+                            It presents key KPIs including Total Products, Total Reviews, Average Rating, and Average Discount.
+                            The dashboard analyzes product categories, pricing strategies, discount levels, revenue, and customer engagement.
+                            The two-page design combines high-level business analysis with detailed product-level insights.
+                            Built with Power BI using data transformation, analytical measures, interactive filtering, and data visualization techniques.
+                        </p>
+                        <a href="https://lnkd.in/p/ebsbQBPM" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="top_section">
+                <h2>Contact <span>Me</span></h2>
+            </div>
+            <div class="container">
+                <div class="soial_contact">
+                    <h2>Follow Me</h2>
+                    <div class="links">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=youssef.mohamed.bis@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> youssef.mohamed.bis@gmail.com</a>
+                        <a href="tel:+2001030748981"><i class="fa-solid fa-phone"></i> 01030748981</a>
+                        <a href="https://www.facebook.com/share/1Dckg5acWv/" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i> FaceBook</a>
+                        <a href="https://www.linkedin.com/in/youssef-mohamed-abdelrasoul" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i> linkedin</a>
+                        <a href="https://www.instagram.com/youssef_mohamed_moham3d?stkn=dWt4N2xrYnRubHE5"
+                            target="_blank"><i class="fa-brands fa-instagram"></i> instagram</a>
+                    </div>
+                </div>
+                <form method="post" action="https://api.sheetmonkey.io/form/2LyYCTKHPfL1HXNAHLgjEq">
+                    <div class="inpts_form">
+                        <input type="text" placeholder="Full Name" name="Name" required>
+                        <input type="text" placeholder="Email" name="Email" required>
+                        <input type="text" placeholder="Mobile Number" name="Phone" required>
+                        <input type="text" placeholder="Subject" name="Subject" required>
+                        <textarea name="massage" id="" rows="10" placeholder="Your Message Here ..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
